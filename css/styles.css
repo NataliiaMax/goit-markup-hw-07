@@ -604,6 +604,7 @@ address {
   background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   transition: transform var(--animation-fast);
 
   font-family: inherit;
@@ -897,12 +898,12 @@ fill: var(--accent-text-color);
   fill: var(--title-text-color);
 }
 
-.user-name:hover,
+
 .user-name:focus {
   border-color: var(--accent-text-color);
 }
 
-.user-name:hover~.user-icon,
+
 .user-name:focus~.user-icon {
   fill: var(--accent-text-color);
 }
