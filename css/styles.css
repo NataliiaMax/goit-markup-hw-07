@@ -67,12 +67,11 @@ address {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin: calc(-1 * var(--indent) / 2);
+  gap: var(--indent);
 }
 
-.card-set-item {
+.card-set__item {
   flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
-  margin: calc(var(--indent) / 2);
 }
 
 /* Header */
@@ -301,7 +300,7 @@ address {
   overflow: hidden;
 }
 
-.icon-container {
+.aside__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +311,7 @@ address {
   border-radius: 4px;
 }
 
-.aside-title {
+.aside__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -321,32 +320,30 @@ address {
   text-transform: uppercase;
 }
 
-.aside-text {
+.aside__text {
   line-height: 1.71;
 }
 
 /* Что мы делаем */
 
-.section-title {
-  margin-bottom: 50px;
-
+  .section-title{margin-bottom: 50px; 
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-.section-secondary {
+.about {
   padding-top: 0;
   --items: 3;
 }
 
-.card-set-container {
+.about__container {
   position: relative;
   padding: 0;
 }
 
-.subtitle-container {
+.about__subtitle-container {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -358,7 +355,7 @@ address {
   height: 70px;
 }
 
-.card-subtitles {
+.about__subtitle {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
@@ -371,18 +368,18 @@ address {
   background-color: var(--content-color);
 }
 
-.content-list {
+.content__item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 
-.card-team {
+.content__team {
   padding: 30px 0;
 }
 
-.content-title {
+.content__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -392,7 +389,7 @@ address {
   text-align: center;
 }
 
-.content-text {
+.content__text {
   margin-bottom: 16px;
 
   font-size: 16px;
@@ -405,16 +402,16 @@ address {
   justify-content: center;
 }
 
-.social-media-list {
+.social-media__list {
   width: 44px;
   height: 44px;
 }
 
-.social-media-list:not(:last-child) {
+.social-media__list:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-media-link {
+.social-media__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -427,30 +424,30 @@ address {
   color: var(--icon-color);
 }
 
-.card-icon {
+.social-media__icon {
   fill: currentColor;
 }
 
-.social-media-link:hover,
-.social-media-link:focus {
+.social-media__link:hover,
+.social-media__link:focus {
   background-color: var(--accent-text-color);
   color: var(--bgc-color);
 }
 
-.link-icon:hover,
-.link-icon:focus {
+.social-media__icon:hover,
+.social-media__icon:focus {
   color: var(--bgc-color);
 }
 
 /* Footer */
 
-.box {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
 
-.box-link {
+.footer__link {
   display: flex;
   align-items: center;
   margin-right: 0;
@@ -497,7 +494,7 @@ address {
   color: var(--accent-text-color);
 }
 
-.box-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -621,22 +618,22 @@ address {
 
 /* Постоянные клиенты */
 
-.client-list {
+.client__list {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
-.client-list-item {
+.client__item {
   width: 170px;
   height: 92px;
 }
 
-.client-list-item:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,12 +646,12 @@ address {
   transition: color var(--animation-fast);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent-text-color);
   border: 1px solid var(--accent-text-color);
 }
@@ -747,7 +744,7 @@ address {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-set-item .container-description {
+.card-set__item .container-description {
   position: relative;
   overflow: hidden;
 }
