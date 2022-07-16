@@ -1,17 +1,16 @@
 .logo {
-    transition: color var(--animation-fast);
-    color: var(--accent-text-color);
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    text-decoration: none;
-}
+  transition: color var(--animation-fast);
+  color: var(--accent-text-color);
+  font-family: Raleway;
+  text-decoration: none;
 
-.logo--dark-color {
+  @include fonts(700, 26px, 1.19);
+
+  &--dark-color {
     color: var(--logo-color);
-}
+  }
 
-.logo--light-color {
+  &--light-color {
     color: var(--bgc-color);
+  }
 }

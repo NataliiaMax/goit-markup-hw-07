@@ -1,0 +1,35 @@
+%section{
+    padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+%title{
+    @include fonts(700);
+        text-transform: uppercase;
+}
+
+%section-title{
+    @include fonts(700, 36, 1.17);
+
+    color: var(--title-text-color);
+        // font-size: 36px;
+        // line-height: 1.17;
+        text-align: center;
+}
+
+%button{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+}
+
+%container{
+    width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+}

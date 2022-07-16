@@ -1,0 +1,39 @@
+.auth-nav {
+  display: flex;
+
+&__item {
+  transition: color var(--animation-fast);
+}
+
+&__item:first-child {
+  margin-right: 50px;
+}
+
+&__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color var(--animation-fast);
+
+  color: var(--primery-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+
+&__item:hover,
+&__item:focus,
+&__link:hover,
+&__link:focus {
+  color: var(--accent-text-color);
+}
+
+&__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+}
