@@ -1,3 +1,13 @@
-body{
-    background-attachment: red;
-}
+@import "./utils/vars";
+@import "./utils/modern-normalize";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+
+@import "./components/reset";
+@import "./components/common";
+@import "./components/social-media";
+@import "./components/filter";
+@import "./components/logo";
+@import "./components/social-media";
+@import "./components/card-set";
