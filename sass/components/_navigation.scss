@@ -12,7 +12,7 @@
 
 &__link {
 
-    @include fonts(500, 14px, 1.14, 0.02em);
+    @include fonts(500, null, null, 0.02em);
 
   display: block;
   padding-top: 32px;
@@ -24,7 +24,7 @@
 
 &__link--current {
 
-    @include fonts(500, 14px, 1.14. 0.02em);
+    @include fonts(500, null, null, 0.02em);
 
   transition: color var(--animation-fast);
 

@@ -10,18 +10,16 @@
 }
 
 &__link {
+  @include fonts(500, null, null, 0.02em);
+  @include paddings(32px, null, 32px, null);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color var(--animation-fast);
+    transition: color var(--animation-fast);
 
   color: var(--primery-text-color);
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+  }
 
 
 &__item:hover,
@@ -35,5 +33,29 @@
   margin-right: 10px;
   fill: currentColor;
 }
+}
 
+.contact {
+
+  @include fonts(null, null, 1.71, null);
+  color: var(--bgc-color);
+    text-decoration: none;
+    transition: color var(--animation-fast);
+    
+    &__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+&__link {
+
+  @include fonts(null, null, 1.71, null);
+  color: var(--mail-color);
+    text-decoration: none;
+  transition: color var(--animation-fast);
+}
+
+&__link--active:hover,
+&__link--active:focus {
+  color: var(--accent-text-color);
+}
 }
